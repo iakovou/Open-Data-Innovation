@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.13/d3.min.js"></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<div id = "container">
+
+		<h1>COMP 6214 OPEN DATA INNOVATION</h1>
+
+	<div id = "text">
+		
+		<p>Since visualitions are widely deployed amongst various areas, a theoretical debate between researches has occurred, whether it is considered a distinct scientific field or not. 
+		By their nature, graphs provide a convenient way of representation of data and simultaneously quite understandable and helpful for the human intuition.
+		There is a large number of visualization depending on the data they represent. The given dataset provides details about project distribution as well as details 
+		of every project.</p>
+	
+	
+	
+		<button id = "vis">What the visualization shows?</button> <br>
+		<button id = "int">How the visualization is interactive?</button> <br>
+		<button id = "aud">Who the intented audience is?</button> <br>
+		<button id = "apr">Why the visualization is appropriate to the data?</button> 
+		
+		
+		<p id = "visualization">The visualization illustrates a stacked barchart of the total number of projects in five departments as well as 
+		information about the duration of the projects. Regarding the time of duration, there are three different categories according to the amount of time 
+		of duration. More specifically, the first category denotes the projects with duration less than two years, the second represents the projects with expected 
+		completion time between two and four years, where the third refers to projects with duration more than 4 years.</p> 	
+		<p id = "interactivity">Regarding to the interactivity of the graph, after the user clicks in a category there is an animation in the graph and the barchart will show only the specific 
+		information. In case the user clicks again the same category, the graph will take the initail shape. In addition, the graph illustates more details about every category
+		when the user places the cursor in the graph.</p>
+		<p id = "audience">This graph was implemented to help project managers get a broader overview about how effective was their time 
+		management plan that was given to departments. Time management of the project plays a major role for the productivity of every department. 
+		In case there are departments with projects that had long duration projects, the manager of the corresponding department should take into
+		consideration this issue and make new plans in order to allocate projects to other departments. One of the most significant issues that
+		a manager should consider is to be fair with the allocation of the project in many terms. For instance, a department that have already 
+		implemented or is about to implement a long duration project should not be allocated to other projects and other departments should start 
+		working on them. Hence, the whole productivity can be increased as the jobs are equally splitted.</p>
+		<p id = "appropriate"> After considering the aforementioned category of employers(i.e project managers),
+		a figure that presented the number of projects as well as the amount of expected completion time would provide them all the essential information about some departments in order to 
+		make or not changes in their management according to specific factors. Regarding to visualizations
+		there are many different types. For instance, in the current case, a scatterplot with the number of projects per department could be used with the number of dots corresponding to
+		projects, the color of the dots could denote the duration of the project and the y-axis could be the time period. However, the managers would have been unable to identify
+		the actual number of projects and particularly, 
+		when the number of projects is large it would be difficult to decide whether to make changes or not. Regarding this assignment, a stacked barchart was used for several reasons. 
+		First of all, this display represents data in a diagrammatical manner. In general, stacked barchart is used in order to represent distinct units(in this case the units are the 
+		the number of projects in each department) and provide
+		a better notion in comparisons with different variables. This is one reason that makes stacked bar graphs one of the most popular methods to display the relative frequency
+		of data. The selected bar char contains information about the time for every project. A segmentation of the bars can provide this information and finally this graph is 
+		an ideal method to compare the total amounts as well as segments. 
+
+
+	</div>
+		
+	<div id="chart"></svg>
+		<script src="script.js"></script>
+	</div>
+		
+</div>
+
+</body>
+</html>
